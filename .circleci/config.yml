@@ -2,7 +2,8 @@
 # See: https://circleci.com/docs/configuration-reference
 version: 2.1
 orbs:
-  android: circleci/android@1.0
+  android: androidsdk/android-30
+
 jobs:
   build:
     working_directory: ~/code
