@@ -2,14 +2,14 @@
 # See: https://circleci.com/docs/configuration-reference
 version: 2.1
 orbs:
-  android: androidsdk/android-30
-
+  android: circleci/android@1.0
 jobs:
   build:
     working_directory: ~/code
     docker:
       #cicleci image for JAVA version 1.8
-           - image: circleci/android:api-25-alpha
+      - image: androidsdk/android-30
+
 
     environment:
       JVM_OPTS: -Xmx3200m
