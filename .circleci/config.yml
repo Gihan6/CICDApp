@@ -8,7 +8,7 @@ jobs:
     working_directory: ~/code
     docker:
       #cicleci image for JAVA version 1.8
-      - image: circleci/android:api-27-alpha
+      - image: circleci/android:api-24-alpha
 
     environment:
       JVM_OPTS: -Xmx3200m
